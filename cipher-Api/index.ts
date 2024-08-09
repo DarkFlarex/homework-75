@@ -5,7 +5,7 @@ import cors, {CorsOptions} from 'cors';
 const app = express();
 const port = 8000;
 
-const whitelist = ['http://localhost:5173']
+const whitelist = ['http://localhost:5174']
 const corsOptions:CorsOptions = {
     origin:  (origin, callback) => {
         if (origin && whitelist.indexOf(origin) !== -1) {
